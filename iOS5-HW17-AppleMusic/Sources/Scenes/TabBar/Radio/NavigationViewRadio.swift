@@ -49,38 +49,50 @@ struct FirstSectionCollection: View {
         Section {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: rows) {
-                    ForEach(model, id: \.self) { data in
-                        VStack {
-                            Rectangle()
-                                .fill(Color(UIColor.f5cac5.cgColor))
-                                .frame(width: 360, height: 2, alignment: .center)
-                                .padding(.bottom, 10)
-                            
-                            Text(data.additionalInfo)
-                                .font(.system(size: 15, weight: .regular, design: .default))
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .foregroundColor(.gray)
-                            
-                            Text(data.name)
-                                .font(.system(size: 24, weight: .regular, design: .default))
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            
-                            Text(data.nameStation ?? "")
-                                .font(.system(size: 24, weight: .regular, design: .default))
-                                .foregroundColor(.gray)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            
-                            Image(data.icon)
-                                .resizable()
-                                .frame(width: 350, height: 200)
-                                .cornerRadius(5)
-                                .padding(.leading, -10)
+                    ForEach(Array(model.enumerated()), id: \.offset) { offset, data in
+                        switch offset {
+                        case 0:
+                            self.horizontalScroll(data: data)
+                                .padding(.leading, 30)
+                        case (model.count - 1):
+                            self.horizontalScroll(data: data)
+                                .padding(.trailing, 30)
+                        default:
+                            self.horizontalScroll(data: data)
                         }
                     }
                 }
+                Spacer()
             }
         }
-        .padding(.leading, 30)
+    }
+    
+    private func horizontalScroll(data: Radio) -> some View {
+        return VStack {
+            Rectangle()
+                .fill(Color(UIColor.f5cac5.cgColor))
+                .frame(width: 360, height: 2, alignment: .center)
+                .padding(.bottom, 10)
+            
+            Text(data.additionalInfo)
+                .font(.system(size: 15, weight: .regular, design: .default))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundColor(.gray)
+            
+            Text(data.name)
+                .font(.system(size: 24, weight: .regular, design: .default))
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            Text(data.nameStation ?? "")
+                .font(.system(size: 24, weight: .regular, design: .default))
+                .foregroundColor(.gray)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            Image(data.icon)
+                .resizable()
+                .frame(width: 380, height: 200)
+                .cornerRadius(5)
+        }
     }
 }
 
@@ -88,7 +100,7 @@ struct SecondSectionStation: View {
     var model: [Radio]
     
     let columns = [
-        GridItem(.adaptive(minimum: 500))
+        GridItem(.adaptive(minimum: 400))
     ]
     
     var body: some View {
@@ -102,31 +114,42 @@ struct SecondSectionStation: View {
             }
         ) {
             LazyVGrid(columns: columns) {
-                ForEach(model, id: \.self) { data in
-                    HStack {
-                        Image(data.icon)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 150, height: 150)
-                            .cornerRadius(5)
-                        
-                        VStack {
-                            Text(data.name)
-                                .font(.system(size: 20, weight: .regular, design: .default))
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            
-                            Text(data.additionalInfo)
-                                .font(.system(size: 15, weight: .regular, design: .default))
-                                .foregroundColor(.gray)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                        }
+                ForEach(Array(model.enumerated()), id: \.offset) { offset, data in
+                    if offset == (model.count - 1) {
+                        self.verticalScroll(data: data)
+                            .frame(width: 410, height: 150, alignment: .leading)
+                            .padding(.bottom, 100)
+                    } else {
+                        self.verticalScroll(data: data)
+                            .frame(width: 410, height: 150, alignment: .leading)
                     }
-                    .frame(width: 410, height: 150, alignment: .leading)
                 }
             }
         }
         .padding(.leading, 20)
     }
+    
+    private func verticalScroll(data: Radio) -> some View {
+        return HStack {
+            Image(data.icon)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 150, height: 150)
+                .cornerRadius(5)
+            
+            VStack {
+                Text(data.name)
+                    .font(.system(size: 20, weight: .regular, design: .default))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                
+                Text(data.additionalInfo)
+                    .font(.system(size: 15, weight: .regular, design: .default))
+                    .foregroundColor(.gray)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
+    }
+    
 }
 
 struct NavigationViewRadio_Previews: PreviewProvider {
