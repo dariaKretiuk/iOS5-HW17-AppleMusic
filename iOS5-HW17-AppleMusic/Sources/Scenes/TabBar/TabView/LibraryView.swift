@@ -9,6 +9,11 @@ import SwiftUI
 
 struct LibraryView: View {
     
+    // MARK: - Elements
+    
+    @State var expand = false
+    @Namespace var animation
+    
     // MARK: - Init
     
     init() {
@@ -20,27 +25,29 @@ struct LibraryView: View {
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             TabView {
-                NavigationViewMedia()
-                    .tabItem {
-                        Image(systemName: "rectangle.stack.badge.play")
-                        Text("Медиатека")
+                ForEach(0..<3) { idx in
+                    switch idx {
+                    case 0: NavigationViewMedia()
+                            .tabItem {
+                                Image(systemName: "rectangle.stack.badge.play")
+                                Text("Медиатека")
+                            }
+                    case 1: NavigationViewRadio()
+                            .tabItem {
+                                Image(systemName: "dot.radiowaves.left.and.right")
+                                Text("Радио")
+                            }
+                    default: NavigationViewSearch()
+                            .tabItem {
+                                Image(systemName: "magnifyingglass")
+                                Text("Поиск")
+                            }
                     }
-                
-                NavigationViewRadio()
-                    .tabItem {
-                        Image(systemName: "dot.radiowaves.left.and.right")
-                        Text("Радио")
-                    }
-                
-                Text("Поиск")
-                    .tabItem {
-                        Image(systemName: "magnifyingglass")
-                        Text("Поиск")
-                    }
+                }
             }
             .accentColor(.red)
             
-            MiniPlayer()
+            MiniPlayer(animation: animation, expand: $expand)
         }
     }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF2FC124281AF5F800D63E4A /* NavigationViewSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FC123281AF5F800D63E4A /* NavigationViewSearch.swift */; };
+		FF2FC126281AF60A00D63E4A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FC125281AF60A00D63E4A /* SearchBar.swift */; };
+		FF2FC128281AF61A00D63E4A /* CategoryCellSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FC127281AF61A00D63E4A /* CategoryCellSearch.swift */; };
 		FF36A331280D2CF600A8050B /* NavigationViewRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF36A330280D2CF600A8050B /* NavigationViewRadio.swift */; };
 		FFE7B7F728071952005711C4 /* iOS5_HW17_AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7B7F628071952005711C4 /* iOS5_HW17_AppleMusicApp.swift */; };
 		FFE7B7F928071952005711C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7B7F828071952005711C4 /* ContentView.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF2FC123281AF5F800D63E4A /* NavigationViewSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewSearch.swift; sourceTree = "<group>"; };
+		FF2FC125281AF60A00D63E4A /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		FF2FC127281AF61A00D63E4A /* CategoryCellSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellSearch.swift; sourceTree = "<group>"; };
 		FF36A330280D2CF600A8050B /* NavigationViewRadio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewRadio.swift; sourceTree = "<group>"; };
 		FFE7B7F328071952005711C4 /* iOS5-HW17-AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS5-HW17-AppleMusic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE7B7F628071952005711C4 /* iOS5_HW17_AppleMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS5_HW17_AppleMusicApp.swift; sourceTree = "<group>"; };
@@ -169,6 +175,9 @@
 		FFE7B81F28071D9A005711C4 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				FF2FC123281AF5F800D63E4A /* NavigationViewSearch.swift */,
+				FF2FC125281AF60A00D63E4A /* SearchBar.swift */,
+				FF2FC127281AF61A00D63E4A /* CategoryCellSearch.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -260,13 +269,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2FC126281AF60A00D63E4A /* SearchBar.swift in Sources */,
 				FFE7B7F928071952005711C4 /* ContentView.swift in Sources */,
 				FFE7B80528071A5D005711C4 /* LibraryView.swift in Sources */,
+				FF2FC124281AF5F800D63E4A /* NavigationViewSearch.swift in Sources */,
 				FF36A331280D2CF600A8050B /* NavigationViewRadio.swift in Sources */,
 				FFE7B81128071AE9005711C4 /* AppleMusicModel.swift in Sources */,
 				FFE7B7F728071952005711C4 /* iOS5_HW17_AppleMusicApp.swift in Sources */,
 				FFE7B81328071B09005711C4 /* AppleMusic.swift in Sources */,
 				FFE7B80F28071AD6005711C4 /* SearchMusic.swift in Sources */,
+				FF2FC128281AF61A00D63E4A /* CategoryCellSearch.swift in Sources */,
 				FFE7B80D28071AC1005711C4 /* EditList.swift in Sources */,
 				FFE7B80B28071AAB005711C4 /* MiniPlayer.swift in Sources */,
 				FFE7B80928071A90005711C4 /* NavigationViewMedia.swift in Sources */,
