@@ -14,8 +14,21 @@ struct Radio: Hashable {
     var additionalInfo: String
 }
 
-struct RadioStation {
+struct Search: Hashable {
     var icon: String
     var name: String
-    var descriptionStation: String
+}
+
+struct SearchCell: Hashable {
+    var icon: String
+    var name: String
+    var nameAlbum: String?
+    var additionalInfo: String
+}
+
+struct MiniPlayerData {
+    var icon: String
+    var name: String
+    var nameSing: String
+    var duration: Int
 }
