@@ -4,7 +4,7 @@ struct EditList: View {
 
     // MARK: - Elements
 
-    @State private var mediaList = AppleMusicModel().createModels()
+    @State private var mediaList = AppleMusicModel().getMediaList()
     
     // MARK: - Body
 

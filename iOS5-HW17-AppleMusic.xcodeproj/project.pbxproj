@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF36A331280D2CF600A8050B /* NavigationViewRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF36A330280D2CF600A8050B /* NavigationViewRadio.swift */; };
 		FFE7B7F728071952005711C4 /* iOS5_HW17_AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7B7F628071952005711C4 /* iOS5_HW17_AppleMusicApp.swift */; };
 		FFE7B7F928071952005711C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7B7F828071952005711C4 /* ContentView.swift */; };
 		FFE7B7FB28071955005711C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE7B7FA28071955005711C4 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF36A330280D2CF600A8050B /* NavigationViewRadio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewRadio.swift; sourceTree = "<group>"; };
 		FFE7B7F328071952005711C4 /* iOS5-HW17-AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS5-HW17-AppleMusic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE7B7F628071952005711C4 /* iOS5_HW17_AppleMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS5_HW17_AppleMusicApp.swift; sourceTree = "<group>"; };
 		FFE7B7F828071952005711C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		FFE7B81928071D30005711C4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FFE7B82028071DB4005711C4 /* Model */,
 				FFE7B81C28071D70005711C4 /* TabBar */,
 				FFE7B81B28071D5F005711C4 /* MainView */,
 				FFE7B81A28071D46005711C4 /* Extension */,
@@ -136,6 +139,7 @@
 		FFE7B81C28071D70005711C4 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				FFE7B82128071DC6005711C4 /* TabView */,
 				FFE7B81F28071D9A005711C4 /* Search */,
 				FFE7B81E28071D91005711C4 /* Radio */,
 				FFE7B81D28071D78005711C4 /* Media */,
@@ -146,8 +150,6 @@
 		FFE7B81D28071D78005711C4 /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				FFE7B82128071DC6005711C4 /* TabView */,
-				FFE7B82028071DB4005711C4 /* Model */,
 				FFE7B80828071A90005711C4 /* NavigationViewMedia.swift */,
 				FFE7B80A28071AAB005711C4 /* MiniPlayer.swift */,
 				FFE7B80C28071AC1005711C4 /* EditList.swift */,
@@ -159,6 +161,7 @@
 		FFE7B81E28071D91005711C4 /* Radio */ = {
 			isa = PBXGroup;
 			children = (
+				FF36A330280D2CF600A8050B /* NavigationViewRadio.swift */,
 			);
 			path = Radio;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				FFE7B7F928071952005711C4 /* ContentView.swift in Sources */,
 				FFE7B80528071A5D005711C4 /* LibraryView.swift in Sources */,
+				FF36A331280D2CF600A8050B /* NavigationViewRadio.swift in Sources */,
 				FFE7B81128071AE9005711C4 /* AppleMusicModel.swift in Sources */,
 				FFE7B7F728071952005711C4 /* iOS5_HW17_AppleMusicApp.swift in Sources */,
 				FFE7B81328071B09005711C4 /* AppleMusic.swift in Sources */,
@@ -394,7 +398,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS5-HW17-AppleMusic/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"iOS5-HW17-AppleMusic/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4Q633P5RZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -423,7 +427,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS5-HW17-AppleMusic/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"iOS5-HW17-AppleMusic/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4Q633P5RZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
