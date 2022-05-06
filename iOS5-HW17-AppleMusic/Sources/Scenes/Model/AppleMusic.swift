@@ -17,6 +17,7 @@ struct Radio: Hashable {
 struct Search: Hashable {
     var icon: String
     var name: String
+    var searchCell: SearchCollection?
 }
 
 struct SearchCell: Hashable {
@@ -24,6 +25,11 @@ struct SearchCell: Hashable {
     var name: String
     var nameAlbum: String?
     var additionalInfo: String
+}
+
+struct SearchCollection: Hashable {
+    var name: String
+    var searchCell: [[SearchCell]]
 }
 
 struct MiniPlayerData {
