@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF2AF8D62824F6E4007F8F53 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AF8D52824F6E4007F8F53 /* ThirdViewController.swift */; };
+		FF2AF8DB2824F72B007F8F53 /* AlbumsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AF8DA2824F72B007F8F53 /* AlbumsHeaderView.swift */; };
+		FF2AF8DD2824F74D007F8F53 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AF8DC2824F74D007F8F53 /* Metrics.swift */; };
+		FF2AF8E02824F771007F8F53 /* CollectionFavoritesSearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AF8DF2824F771007F8F53 /* CollectionFavoritesSearchViewCell.swift */; };
+		FF2AF8E22824F77E007F8F53 /* CollectionNewSearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AF8E12824F77E007F8F53 /* CollectionNewSearchViewCell.swift */; };
+		FF2AF8E42824F789007F8F53 /* CollectionSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AF8E32824F789007F8F53 /* CollectionSearch.swift */; };
+		FF2AF8E62824F794007F8F53 /* CollectionSearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AF8E52824F794007F8F53 /* CollectionSearchViewCell.swift */; };
+		FF2AF8E92824F870007F8F53 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AF8E82824F870007F8F53 /* SearchViewCell.swift */; };
+		FF2AF8EB2824F961007F8F53 /* UIKitFromSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AF8EA2824F961007F8F53 /* UIKitFromSwiftUI.swift */; };
 		FF2FC124281AF5F800D63E4A /* NavigationViewSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FC123281AF5F800D63E4A /* NavigationViewSearch.swift */; };
 		FF2FC126281AF60A00D63E4A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FC125281AF60A00D63E4A /* SearchBar.swift */; };
 		FF2FC128281AF61A00D63E4A /* CategoryCellSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FC127281AF61A00D63E4A /* CategoryCellSearch.swift */; };
@@ -26,6 +35,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF2AF8D52824F6E4007F8F53 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		FF2AF8DA2824F72B007F8F53 /* AlbumsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsHeaderView.swift; sourceTree = "<group>"; };
+		FF2AF8DC2824F74D007F8F53 /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		FF2AF8DF2824F771007F8F53 /* CollectionFavoritesSearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFavoritesSearchViewCell.swift; sourceTree = "<group>"; };
+		FF2AF8E12824F77E007F8F53 /* CollectionNewSearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNewSearchViewCell.swift; sourceTree = "<group>"; };
+		FF2AF8E32824F789007F8F53 /* CollectionSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSearch.swift; sourceTree = "<group>"; };
+		FF2AF8E52824F794007F8F53 /* CollectionSearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSearchViewCell.swift; sourceTree = "<group>"; };
+		FF2AF8E82824F870007F8F53 /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
+		FF2AF8EA2824F961007F8F53 /* UIKitFromSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitFromSwiftUI.swift; sourceTree = "<group>"; };
 		FF2FC123281AF5F800D63E4A /* NavigationViewSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewSearch.swift; sourceTree = "<group>"; };
 		FF2FC125281AF60A00D63E4A /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		FF2FC127281AF61A00D63E4A /* CategoryCellSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellSearch.swift; sourceTree = "<group>"; };
@@ -56,6 +74,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF2AF8D32824F67F007F8F53 /* SearchUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FF2AF8D92824F713007F8F53 /* CollectionViewCell */,
+				FF2AF8D82824F70C007F8F53 /* HeaderView */,
+				FF2AF8D72824F700007F8F53 /* Metrics */,
+				FF2AF8D42824F6C6007F8F53 /* MainView */,
+			);
+			path = SearchUIKit;
+			sourceTree = "<group>";
+		};
+		FF2AF8D42824F6C6007F8F53 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				FF2AF8D52824F6E4007F8F53 /* ThirdViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		FF2AF8D72824F700007F8F53 /* Metrics */ = {
+			isa = PBXGroup;
+			children = (
+				FF2AF8DC2824F74D007F8F53 /* Metrics.swift */,
+			);
+			path = Metrics;
+			sourceTree = "<group>";
+		};
+		FF2AF8D82824F70C007F8F53 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				FF2AF8DA2824F72B007F8F53 /* AlbumsHeaderView.swift */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		FF2AF8D92824F713007F8F53 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF2AF8E72824F862007F8F53 /* MainSearchViewCell */,
+				FF2AF8DE2824F762007F8F53 /* CollectionSearch */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FF2AF8DE2824F762007F8F53 /* CollectionSearch */ = {
+			isa = PBXGroup;
+			children = (
+				FF2AF8DF2824F771007F8F53 /* CollectionFavoritesSearchViewCell.swift */,
+				FF2AF8E12824F77E007F8F53 /* CollectionNewSearchViewCell.swift */,
+				FF2AF8E32824F789007F8F53 /* CollectionSearch.swift */,
+				FF2AF8E52824F794007F8F53 /* CollectionSearchViewCell.swift */,
+			);
+			path = CollectionSearch;
+			sourceTree = "<group>";
+		};
+		FF2AF8E72824F862007F8F53 /* MainSearchViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF2AF8E82824F870007F8F53 /* SearchViewCell.swift */,
+			);
+			path = MainSearchViewCell;
+			sourceTree = "<group>";
+		};
 		FFE7B7EA28071952005711C4 = {
 			isa = PBXGroup;
 			children = (
@@ -175,9 +256,11 @@
 		FFE7B81F28071D9A005711C4 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				FF2AF8D32824F67F007F8F53 /* SearchUIKit */,
 				FF2FC123281AF5F800D63E4A /* NavigationViewSearch.swift */,
 				FF2FC125281AF60A00D63E4A /* SearchBar.swift */,
 				FF2FC127281AF61A00D63E4A /* CategoryCellSearch.swift */,
+				FF2AF8EA2824F961007F8F53 /* UIKitFromSwiftUI.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -274,15 +357,24 @@
 				FFE7B80528071A5D005711C4 /* LibraryView.swift in Sources */,
 				FF2FC124281AF5F800D63E4A /* NavigationViewSearch.swift in Sources */,
 				FF36A331280D2CF600A8050B /* NavigationViewRadio.swift in Sources */,
+				FF2AF8E62824F794007F8F53 /* CollectionSearchViewCell.swift in Sources */,
+				FF2AF8EB2824F961007F8F53 /* UIKitFromSwiftUI.swift in Sources */,
+				FF2AF8E92824F870007F8F53 /* SearchViewCell.swift in Sources */,
+				FF2AF8E22824F77E007F8F53 /* CollectionNewSearchViewCell.swift in Sources */,
 				FFE7B81128071AE9005711C4 /* AppleMusicModel.swift in Sources */,
 				FFE7B7F728071952005711C4 /* iOS5_HW17_AppleMusicApp.swift in Sources */,
+				FF2AF8D62824F6E4007F8F53 /* ThirdViewController.swift in Sources */,
 				FFE7B81328071B09005711C4 /* AppleMusic.swift in Sources */,
+				FF2AF8DB2824F72B007F8F53 /* AlbumsHeaderView.swift in Sources */,
 				FFE7B80F28071AD6005711C4 /* SearchMusic.swift in Sources */,
 				FF2FC128281AF61A00D63E4A /* CategoryCellSearch.swift in Sources */,
+				FF2AF8E02824F771007F8F53 /* CollectionFavoritesSearchViewCell.swift in Sources */,
 				FFE7B80D28071AC1005711C4 /* EditList.swift in Sources */,
+				FF2AF8DD2824F74D007F8F53 /* Metrics.swift in Sources */,
 				FFE7B80B28071AAB005711C4 /* MiniPlayer.swift in Sources */,
 				FFE7B80928071A90005711C4 /* NavigationViewMedia.swift in Sources */,
 				FFE7B80728071A78005711C4 /* UIColor+Extension.swift in Sources */,
+				FF2AF8E42824F789007F8F53 /* CollectionSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

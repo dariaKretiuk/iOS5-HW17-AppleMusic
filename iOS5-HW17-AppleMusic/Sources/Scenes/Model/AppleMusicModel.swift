@@ -40,21 +40,49 @@ final class AppleMusicModel {
     
     func getSearch() -> [Search] {
         return [
-            Search(icon: "prostr-audio-search", name: "Пространственное аудио"),
-            Search(icon: "pop-russia-search", name: "Поп на русском"),
-            Search(icon: "pop-search", name: "Поп"),
-            Search(icon: "hip-hop-search", name: "Хип-хоп на русском"),
-            Search(icon: "calmness-search", name: "Спокойствие"),
-            Search(icon: "hits-search", name: "Хиты"),
-            Search(icon: "siri-search", name: "Привет, Siri, включи..."),
-            Search(icon: "hits-russia-search", name: "Хиты на русском"),
-            Search(icon: "rock-russia-search", name: "Рок на русском"),
-            Search(icon: "chats-search", name: "Чарты"),
-            Search(icon: "dj-search", name: "DJ-миксы"),
-            Search(icon: "sunrice-search", name: "Восход"),
-            Search(icon: "hip-hop-search", name: "Хип-хоп"),
-            Search(icon: "children-search", name: "Для детей"),
-            Search(icon: "family-search", name: "Для семьи")
+            Search(icon: "prostr-audio-search",
+                   name: "Пространственное",
+                   searchCell: SearchCollection(name: "Пространственное",
+                                               searchCell: [[
+                                                        SearchCell(icon: "", name: "(Deluxe)", nameAlbum: "Ed Sheeran", additionalInfo: "ПРОСТРАНСТВЕННОЕ АУДИО"),
+                                                        SearchCell(icon: "", name: "1 (2015 Version)", nameAlbum: "The Beatles", additionalInfo: "НОВИНКИ В ПРОСТРАНСТВЕННОМ АУДИО"),
+                                                        SearchCell(icon: "", name: "Multitude", nameAlbum: "Stromae", additionalInfo: "НОВИНКИ В ПРОСТРАНСТВЕННОМ АУДИО")
+                                                    ],
+                                                    [
+                                                        SearchCell(icon: "", name: "Создано для пространственного аудио", additionalInfo: "Apple Music"),
+                                                        SearchCell(icon: "", name: "Хиты в пространственном аудио", additionalInfo: "Apple Music"),
+                                                        SearchCell(icon: "", name: "Поп в пространственном аудио", additionalInfo: "Apple Music")
+                                                    ],
+                                                    [
+                                                        SearchCell(icon: "", name: "Феникс", additionalInfo: "ANNA ASTI"),
+                                                        SearchCell(icon: "", name: "Sweetest Pie", additionalInfo: "Megan Thee Stallion & Dua Lipa"),
+                                                        SearchCell(icon: "", name: "По полюшку", additionalInfo: "Akmal'"),
+                                                        SearchCell(icon: "", name: "Танцевали до утра", additionalInfo: "Леша Свик"),
+                                                        SearchCell(icon: "", name: "Он и Она", additionalInfo: "Jah Khalib & Akha"),
+                                                        SearchCell(icon: "", name: "Time Today", additionalInfo: "Moneybag"),
+                                                        SearchCell(icon: "", name: "Айсберг", additionalInfo: "Zivert"),
+                                                        SearchCell(icon: "", name: "Азбука", additionalInfo: "Boulevard Depo & SPAK"),
+                                                        SearchCell(icon: "", name: "Паранойя", additionalInfo: "XARISTA"),
+                                                        SearchCell(icon: "", name: "Tell To My Heart", additionalInfo: "Meduza"),
+                                                        SearchCell(icon: "", name: "Oh Na Na", additionalInfo: "Camila Cabello, Myke Towers & Tainy")
+                                                    ]
+                                                    ]
+                                               )
+            ),
+            Search(icon: "pop-russia-search", name: "Поп на русском", searchCell: nil),
+            Search(icon: "pop-search", name: "Поп", searchCell: nil),
+            Search(icon: "hip-hop-search", name: "Хип-хоп на русском", searchCell: nil),
+            Search(icon: "calmness-search", name: "Спокойствие", searchCell: nil),
+            Search(icon: "hits-search", name: "Хиты", searchCell: nil),
+            Search(icon: "siri-search", name: "Привет, Siri, включи...", searchCell: nil),
+            Search(icon: "hits-russia-search", name: "Хиты на русском", searchCell: nil),
+            Search(icon: "rock-russia-search", name: "Рок на русском", searchCell: nil),
+            Search(icon: "chats-search", name: "Чарты", searchCell: nil),
+            Search(icon: "dj-search", name: "DJ-миксы", searchCell: nil),
+            Search(icon: "sunrice-search", name: "Восход", searchCell: nil),
+            Search(icon: "hip-hop-search", name: "Хип-хоп", searchCell: nil),
+            Search(icon: "children-search", name: "Для детей", searchCell: nil),
+            Search(icon: "family-search", name: "Для семьи", searchCell: nil)
         ]
     }
     

@@ -37,7 +37,8 @@ struct LibraryView: View {
                                 Image(systemName: "dot.radiowaves.left.and.right")
                                 Text("Радио")
                             }
-                    default: NavigationViewSearch()
+                    default: UIKitFromSwiftUI()
+                        //NavigationViewSearch()
                             .tabItem {
                                 Image(systemName: "magnifyingglass")
                                 Text("Поиск")
