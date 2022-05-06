@@ -57,7 +57,7 @@ struct SectionMain: View {
                             NavigationLink(destination: CategoryCellSearch(name: self.$model[idx].name)) {
                                     Image(self.model[idx].icon)
                                         .resizable()
-                                        .frame(width: 190, height: 120)
+                                        .frame(width: 190, height: 80)
                                         .cornerRadius(10)
                                 }
                         }

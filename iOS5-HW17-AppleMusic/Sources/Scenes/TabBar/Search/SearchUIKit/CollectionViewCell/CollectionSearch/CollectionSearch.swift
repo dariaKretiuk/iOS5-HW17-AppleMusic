@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CollectionSearch: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class CollectionSearch: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     // MARK: - Elements
     
@@ -144,8 +144,10 @@ class CollectionSearch: UIViewController, UICollectionViewDelegate, UICollection
         section.boundarySupplementaryItems = [header]
         return section
     }
-    
-    // MARK: - Data Source and Delegate
+}
+
+// MARK: - UITableViewDataSource
+extension CollectionSearch: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return models.searchCell.count

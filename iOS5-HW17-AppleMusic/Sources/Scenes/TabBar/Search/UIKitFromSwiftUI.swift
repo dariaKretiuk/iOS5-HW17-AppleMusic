@@ -9,7 +9,6 @@ import SwiftUI
 import UIKit
 
 struct UIKitFromSwiftUI: UIViewControllerRepresentable {
-    var configure: (UINavigationController) -> Void = { _ in }
     
     func makeUIViewController(context: Context) -> UINavigationController {
         let viewController = ThirdViewController()
@@ -23,9 +22,6 @@ struct UIKitFromSwiftUI: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        if let nc = uiViewController.navigationController {
-            self.configure(nc)
-        }
     }
 }
 
