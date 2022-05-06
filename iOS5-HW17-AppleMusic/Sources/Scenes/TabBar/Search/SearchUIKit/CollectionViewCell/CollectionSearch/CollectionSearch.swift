@@ -147,6 +147,7 @@ class CollectionSearch: UIViewController, UICollectionViewDelegate, UICollection
 }
 
 // MARK: - UITableViewDataSource
+
 extension CollectionSearch: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
