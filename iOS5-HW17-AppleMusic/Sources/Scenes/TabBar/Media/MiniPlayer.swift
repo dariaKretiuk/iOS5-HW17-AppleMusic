@@ -10,6 +10,7 @@ import SwiftUI
 struct MiniPlayer: View {
     
     // MARK: - Elements
+    
     var animation: Namespace.ID
     var height = UIScreen.main.bounds.height / 3
     var safeArea = UIApplication.shared.windows.first?.safeAreaInsets
@@ -20,6 +21,7 @@ struct MiniPlayer: View {
     @State var volumeDuration: CGFloat = 0
     
     // MARK: - Body
+    
     var body: some View {
         VStack {
             if expand {
